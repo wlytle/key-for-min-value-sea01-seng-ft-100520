@@ -8,6 +8,7 @@ def key_for_min_value(name_hash)
     return min_key
   else
     name_hash.each do |key, value|
+      binding.pry
       if !min || value < min
         min_key = key
       end
